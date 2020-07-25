@@ -4,6 +4,8 @@
   .slider
     &__container
       width: 590px
+  .reviews
+    padding: 40px 0 60px
 @media ( max-width: 992px)
   .container
     max-width: 700px
@@ -38,6 +40,14 @@
       width: 100%
   .newsletter
     padding: 92px 0 93px
+  .reviews__slick-slider .slick-arrow 
+    top: 45px
+  .reviews__slick-slider .slick-prev
+    left: 50%
+    margin-left: -130px
+  .reviews__slick-slider .slick-next
+    right: 50%
+    margin-right: -130px
 @media ( max-width: 768px)
   .container
     max-width: 576px
@@ -103,6 +113,18 @@
       margin-bottom: 37px
     &__search
       width: 100%
+  .reviews
+    padding: 40px 0 50px
+    &__section-title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+    &__slide
+      padding: 0 31px 30px
+      &::before, &::after
+        display: none
+  .reviews__slick-slider.slick-initialized.slick-slider
+    height: 100%
 @media ( max-width: 576px)
   .logo
     width: 99px
@@ -117,3 +139,9 @@
     height: 179px
   .slide
     height: 179px
+  .reviews
+    &__section-title
+      font-size: 18px
+      line-height: 23px
+      max-width: 245px
+      margin: 0 auto 42px

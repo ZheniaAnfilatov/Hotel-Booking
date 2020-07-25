@@ -1,7 +1,12 @@
 $(document).ready(function () {
 
-  // слайдер
+  // слайдер hotel
   $('.slick-slider').slick({});
+
+  // слайдер reciews
+  $('.reviews__slick-slider').slick({
+    adaptiveHeight: true,
+  });
 
 
   // карты

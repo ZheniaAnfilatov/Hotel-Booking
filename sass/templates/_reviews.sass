@@ -1,0 +1,97 @@
+.reviews
+  padding: 40px 0 70px
+  &__section-title
+    font-style: normal
+    font-weight: 600
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    color: $dark
+    margin-bottom: 115px
+  &-slider
+    &__container
+      max-width: 730px
+      margin: auto
+    &__pearson
+      margin-bottom: 32px
+  &__slide
+    position: relative
+    padding: 0 62px 30px
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: $light
+    margin-top: 45px
+    border-radius: 8px
+    outline: none
+    &::before
+      content: ''
+      position: absolute
+      left: 62px
+      top: 13px
+      width: 70px
+      height: 47px
+      background-image: url(../img/quote-left.svg)
+      background-repeat: no-repeat
+    &::after
+      content: ''
+      position: absolute
+      right: 60px
+      top: 118px
+      width: 70px
+      height: 47px
+      background-image: url(../img/quote-right.svg)
+      background-repeat: no-repeat
+  &__slider
+    position: relative
+.pearson
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-top: -45px
+  &__avatar
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    object-fit: cover
+    margin-bottom: 10px
+  &__name
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $primary
+    margin-bottom: 10px
+  &__date
+    font-style: normal
+    font-weight: normal
+    font-size: 10px
+    line-height: 13px
+    margin-bottom: 4px
+  &__stars
+    display: flex
+    flex-direction: row
+  &__review
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 160%
+    text-align: justify
+    max-width: 537px
+    margin: auto
+.reviews__slick-slider .slick-arrow 
+  position: absolute
+  width: 30px
+  height: 30px
+  &:hover
+    width: 30px
+    height: 30px
+.reviews__slick-slider .slick-prev
+  background: url(../img/arrow-reviews-prev.svg)
+  left: 0
+.reviews__slick-slider .slick-next
+  background: url(../img/arrow-reviews-next.svg)
+  right: 0
+.reviews__slick-slider.slick-initialized.slick-slider
+  position: static
