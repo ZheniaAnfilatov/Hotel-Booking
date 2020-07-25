@@ -29,4 +29,5 @@ $(document).ready(function () {
     // Размещение геообъекта на карте.
     myMap.geoObjects.add(myGeoObject);
   }
+
 });
