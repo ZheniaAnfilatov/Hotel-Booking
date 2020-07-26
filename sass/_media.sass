@@ -6,6 +6,9 @@
       width: 590px
   .reviews
     padding: 40px 0 60px
+  .card
+    width: 230px
+    height: 230px
 @media ( max-width: 992px)
   .container
     max-width: 700px
@@ -48,6 +51,14 @@
   .reviews__slick-slider .slick-next
     right: 50%
     margin-right: -130px
+  .activities
+    padding-bottom: 70px
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      width: 339px
+      height: 255px
+      margin-bottom: 20px
 @media ( max-width: 768px)
   .container
     max-width: 576px
@@ -125,6 +136,13 @@
         display: none
   .reviews__slick-slider.slick-initialized.slick-slider
     height: 100%
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px
+    &__title
+      margin-bottom: 40px
+  .card
+    flex-basis: 47%
 @media ( max-width: 576px)
   .logo
     width: 99px
@@ -145,3 +163,6 @@
       line-height: 23px
       max-width: 245px
       margin: 0 auto 42px
+  .card
+    width: 100%
+    flex-basis: 100%
